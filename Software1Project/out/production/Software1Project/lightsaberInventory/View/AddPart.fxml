@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="375.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lightsaberInventory.View.AddPartController">
+   <children>
+      <HBox layoutX="57.0" layoutY="30.0" prefHeight="23.0" prefWidth="248.0">
+         <children>
+            <Label text="Add Part">
+               <HBox.margin>
+                  <Insets right="25.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Trebuchet MS Bold" size="14.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="InHouseRadio" mnemonicParsing="false" onAction="#updateRadioUI" text="In House">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </RadioButton>
+            <RadioButton fx:id="OutsourcedRadio" mnemonicParsing="false" onAction="#updateRadioUI" text="Outsourced" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" layoutX="86.0" layoutY="142.0" prefHeight="16.0" prefWidth="200.0">
+         <children>
+            <Label text="ID">
+               <HBox.margin>
+                  <Insets right="15.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="textID" disable="true" editable="false"/>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" layoutX="86.0" layoutY="179.0" prefHeight="16.0" prefWidth="200.0">
+         <children>
+            <Label text="Name">
+               <HBox.margin>
+                  <Insets right="15.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="textName" alignment="CENTER_RIGHT" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" layoutX="86.0" layoutY="216.0" prefHeight="16.0" prefWidth="200.0">
+         <children>
+            <Label text="Inv">
+               <HBox.margin>
+                  <Insets right="15.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="textInventory" alignment="CENTER_RIGHT" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" layoutX="66.0" layoutY="255.0" prefHeight="26.0" prefWidth="219.0">
+         <children>
+            <Label text="\$/Unit">
+               <HBox.margin>
+                  <Insets right="15.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="textPrice" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" layoutX="86.0" layoutY="289.0" prefHeight="26.0" prefWidth="267.0">
+         <children>
+            <Label text="Max">
+               <HBox.margin>
+                  <Insets right="15.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="textMax" prefHeight="26.0" prefWidth="85.0" />
+            <Label layoutX="10.0" layoutY="15.0" text="Min">
+               <HBox.margin>
+                  <Insets left="7.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="textMin" layoutX="53.0" layoutY="10.0" prefHeight="26.0" prefWidth="85.0">
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" layoutX="7.0" layoutY="332.0" prefHeight="26.0" prefWidth="279.0">
+         <children>
+            <Label fx:id="dualPurpLabel" text="Machine ID">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="textDualPurpose">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin></TextField>
+         </children>
+      </HBox>
+      <HBox layoutX="141.0" layoutY="406.0" prefHeight="38.0" prefWidth="157.0">
+         <children>
+            <Button fx:id="addButton" mnemonicParsing="false" onAction="#addPartButtonPressed" text="Add">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#setCancelButton" text="Cancel">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="35.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
