@@ -1,5 +1,5 @@
 # Inventory Management System
-> Lightsaber Inventory Management  System built with JavaFX 11 and JavaDoc Documentaion
+> Lightsaber Inventory Management  System built with JavaFX 11 with JavaDoc Documentation
 
 ## Usage example
 
